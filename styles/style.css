@@ -17,7 +17,7 @@ header{
     max-width: 1600px;
     width: 100%;
     margin: 0 auto;
-    background-color: #412567;
+    background-color: #1A0B2E;
     padding: 1.87rem 12.5rem;
     display: flex;
     justify-content: space-between;
@@ -52,6 +52,7 @@ header{
     background: linear-gradient(45deg, rgba(255, 255, 0, 0.747),rgb(244, 94, 119),rgb(241, 54, 241));
     padding: 12px 16px;
     border-radius: 50px;
+     cursor: pointer;
 }
 .banner{
     max-width: 1600px;
@@ -62,6 +63,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 101px 0px;
+    position: relative;
 }
 .banner-container{
     max-width: 550px;
@@ -108,7 +110,7 @@ text-align: center;
 }
 .banner-description{
     font-size: 1rem;
-    color: #FFFFFF;
+    color: #ffffff80;
     margin-top: 8px;
     margin-bottom: 24px;
 }
@@ -131,7 +133,60 @@ text-align: center;
    font-size: 1rem;
     font-weight: 600;
     color: #00FF88;
+    cursor: pointer;
 }
+.prodcast{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #1A0B2E;
+}
+.prodcast-container{
+    max-width: 1200px;
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 120px;
+   
+}
+.about-prodcast{
+     text-align: center;
+}
+.section-title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.prodcast-description, .join{
+    font-size: 1rem;
+    line-height: 20px;
+    color: #ffffff80;
+}
+.join{
+    padding-top: 20px;
+}
+hr{
+    border: 1px solid rgba(255, 255, 255, 0.102);
+    margin: 50px 0px;
+}
+.prodcast-stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.stats-card h2{
+    font-size: 3rem;
+    font-weight: 700;
+  color: #00FF88;
+  margin-bottom: 16px;
+}
+.stats-card p{
+    font-size: 1rem;
+    color: #ffffff80;
+}
+
 @media screen and (max-width: 576px){
     .navbar{
         padding: 20px;
@@ -158,6 +213,20 @@ text-align: center;
   display: block;
   display: flex;
  }
+ .prodcast-container{
+    width: 90%;
+ }
+ .section-title{
+    font-size: 2.5rem;
+ }
+ .prodcast-stats{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+ }
+ .stats-card h2{
+    font-size: 2.5rem;
+ }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px){
@@ -170,4 +239,9 @@ text-align: center;
     .menu-items{
         gap: 20px;
     }
+    .prodcast-stats{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+ }
 }
