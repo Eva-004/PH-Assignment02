@@ -23,11 +23,7 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.logo{
-    font-size: 3rem;
-    font-weight: 700;
-    color: #FFFFFF;
-}
+
 #wave{
     color: rgba(255, 0, 208, 0.8);
     
@@ -57,7 +53,85 @@ header{
     padding: 12px 16px;
     border-radius: 50px;
 }
-
+.banner{
+    max-width: 1600px;
+    width:100%;
+    margin: 0 auto;
+    background-image: url(../assets/hero-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 101px 0px;
+}
+.banner-container{
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+.banner-image{
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(../assets/hero-circle.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    position: relative;
+}
+.banner-image img{
+    max-width: 200px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 75px 20px;
+}
+.new{
+    position: absolute;
+    background-color: #00FF88;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1A0B2E;
+    top:10%;
+    left: 80%;
+}
+.banner-content{
+text-align: center;
+}
+.banner-title{
+    font-size: 3.75rem;
+    font-weight: 800;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+.banner-description{
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+.btns{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.btn-secondary{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:8px;
+   background: transparent;
+   padding: 12px 20px;
+   border: 1px solid #00FF88;
+   border-radius: 50px;
+   font-size: 1rem;
+    font-weight: 600;
+    color: #00FF88;
+}
 @media screen and (max-width: 576px){
     .navbar{
         padding: 20px;
@@ -71,6 +145,19 @@ header{
     .menu-icon{
         display: block;
     }
+    .banner-container{
+    max-width: 400px;
+    width: 90%;
+    margin: 0 auto; 
+}
+.banner-title{
+    font-size: 2.5rem;
+    margin-top: 24px;
+}
+ .btns .btn-primary{
+  display: block;
+  display: flex;
+ }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px){
