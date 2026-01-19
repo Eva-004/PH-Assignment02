@@ -192,13 +192,13 @@ hr{
     margin: 0 auto;
     background-color: #230E3D;
 }
-.features-container{
+.features-container, .episodes-container{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 120px 0;
 }
-.features-container .section-title{
+.features-container .section-title ,.episodes .section-title{
     text-align: center;
 }
 
@@ -250,6 +250,40 @@ hr{
     font-size: 1rem;
     line-height: 1.5rem;
     color: #ffffff60;
+}
+.featured-episodes{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #1A0B2E;
+}
+.episodes-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.video-card{
+    background-color: #250D44;
+    border-radius: 8%;
+}
+iframe{
+    width: 100%;
+    border-radius: 10% 10% 0 0;
+}
+.video-content{
+    padding: 24px;
+}
+.watch-time{
+    margin-top: 12px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap:6px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: #00FF88;
 }
 
 
@@ -314,6 +348,10 @@ hr{
 .card-title{
     font-size: 1.375rem;
 }
+.episodes-cards{
+    flex-direction: column;
+    padding: 0 20px;
+}
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px){
@@ -331,4 +369,8 @@ hr{
     grid-template-columns: repeat(2, 1fr);
     gap: 80px;
  }
+ .episodes-cards{
+    flex-direction: column;
+    padding: 0 80px;
+}
 }
