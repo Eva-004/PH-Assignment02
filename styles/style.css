@@ -186,6 +186,73 @@ hr{
     font-size: 1rem;
     color: #ffffff80;
 }
+.features{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #230E3D;
+}
+.features-container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+.features-container .section-title{
+    text-align: center;
+}
+
+.headphone-card{
+    grid-area: headphone;
+}
+.device-card{
+    grid-area: device;
+}
+.globe-card{
+    grid-area: globe;
+}
+.exclusive-card{
+    grid-area: exclusive;
+}
+.resource-card{
+    grid-area: resource;
+}
+.features-content{
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+     "headphone device device"
+     "headphone globe globe"
+     "exclusive exclusive resource"
+    ;
+}
+.featurs-card{
+   background-color: rgba(53, 17, 101, 0.4);
+   border-radius: 40px;
+}
+.big-card, .small-card{
+    padding: 40px;
+}
+
+.wide-card{
+    padding: 107px 40px;
+}
+.featurs-card img{
+    margin-bottom: 16px;
+}
+.card-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.card-description{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #ffffff60;
+}
+
+
 
 @media screen and (max-width: 576px){
     .navbar{
@@ -227,6 +294,26 @@ hr{
  .stats-card h2{
     font-size: 2.5rem;
  }
+ .section-title{
+    font-size: 2rem;
+ }
+ .features-content{
+    padding: 0 20px;
+ }
+ .features-content{
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+     "headphone"
+     "device"
+     "globe"
+     "exclusive"
+     "resource"
+    ;
+}
+.card-title{
+    font-size: 1.375rem;
+}
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px){
