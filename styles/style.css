@@ -198,7 +198,7 @@ hr{
     margin: 0 auto;
     padding: 120px 0;
 }
-.features-container .section-title ,.episodes .section-title{
+.features-container .section-title ,.episodes .section-title, .host .section-title{
     text-align: center;
 }
 
@@ -246,7 +246,7 @@ hr{
     color: #FFFFFF;
     margin-bottom: 16px;
 }
-.card-description{
+.card-description, .host-description{
     font-size: 1rem;
     line-height: 1.5rem;
     color: #ffffff60;
@@ -285,8 +285,86 @@ iframe{
     line-height: 1.5rem;
     color: #00FF88;
 }
-
-
+.host{
+    margin-top: 120px;
+}
+.host-content{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-radius: 40px;
+    background-color:rgba(53, 17, 101, 0.4);
+    padding: 48px 40px;
+}
+.host-image{ 
+    max-width: 200px;
+    width: 100%;
+}
+.host-title{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+.host-social{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+ .social-image{
+    max-width: 40px;
+    width: 100%;
+    background: transparent;
+    border: 1px solid #533C72;
+    padding: 12px;
+    border-radius: 50%;
+}
+footer{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+.footer-container{
+    background-image: url(../assets/footer-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 120px 0;
+}
+.footer-content{
+    max-width: 544px;
+    width: 100%;
+    margin: 0 auto;
+}
+.footer-logo{
+    max-width: 410px;
+    width: 100%;
+    margin: 0 auto;
+    padding:0 67px;
+    margin-bottom: 32px;
+}
+.footer-social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.social-link{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff60;
+}
+.copyright{
+    text-align: center;
+    margin-top: 32px;
+    font-size: 1rem;
+    line-height: 1.5px;
+    color: #ffffff60;
+}
 
 @media screen and (max-width: 576px){
     .navbar{
@@ -351,6 +429,19 @@ iframe{
 .episodes-cards{
     flex-direction: column;
     padding: 0 20px;
+}
+.host-content{
+    flex-direction: column;
+    margin: 0 20px;
+}
+.footer-content{
+    padding: 40px 20px;
+}
+.footer-social{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 0 72px;
 }
 }
 
